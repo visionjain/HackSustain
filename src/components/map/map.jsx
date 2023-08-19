@@ -38,7 +38,7 @@ const Map = () => {
           {tabItems.map((item, idx) => (
             <li
               key={idx}
-              className={`py-2 ${selectedItem === idx ? 'text-indigo-600' : 'text-gray-500'}`}
+              className={`py-2 ${selectedItem === idx ? 'text-gray-500' : 'text-gray-500'}`}
             >
               <a
                 href={item.url}
