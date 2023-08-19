@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { ImStatsBars } from 'react-icons/Im';
-import { AiOutlineCamera } from 'react-icons/Ai';
-import { BsMap } from 'react-icons/Bs';
-import { PiMedalLight } from 'react-icons/Pi';
-import { BiUser } from 'react-icons/Bi';
+import { ImStatsBars } from 'react-icons/im';
+import { AiOutlineCamera } from 'react-icons/ai';
+import { BsMap } from 'react-icons/bs';
+import { PiMedalLight } from 'react-icons/pi';
+import { BiUser } from 'react-icons/bi';
 
 const Map = () => {
   const tabItems = [
