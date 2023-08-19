@@ -9,18 +9,23 @@ const Map = () => {
   const tabItems = [
     {
       icon: <ImStatsBars className="w-40 h-10" />,
+      url: '/stats',
     },
     {
       icon: <AiOutlineCamera className="w-40 h-10" />,
+      url: '/scan',
     },
     {
       icon: <BsMap className="w-40 h-10" />,
+      url: '/map',
     },
     {
       icon: <PiMedalLight className="w-40 h-10" />,
+      url: '/medal',
     },
     {
       icon: <BiUser className="w-40 h-10" />,
+      url: '/profile',
     },
   ];
 
@@ -33,17 +38,17 @@ const Map = () => {
           {tabItems.map((item, idx) => (
             <li
               key={idx}
-              className={`py-2 ${selectedItem === idx ? "text-indigo-600" : "text-gray-500"}`}
+              className={`py-2 ${selectedItem === idx ? 'text-indigo-600' : 'text-gray-500'}`}
             >
-              <button
+              <a
+                href={item.url}
                 role="tab"
                 aria-selected={selectedItem === idx ? true : false}
                 className="flex flex-col items-center gap-1 px-2 rounded-lg duration-150 hover:text-indigo-600"
                 onClick={() => setSelectedItem(idx)}
               >
                 {item.icon}
-                {item.name}
-              </button>
+              </a>
             </li>
           ))}
         </ul>
