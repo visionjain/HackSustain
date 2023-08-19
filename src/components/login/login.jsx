@@ -99,7 +99,7 @@ const Login = () => {
                     </button>
                 </div>
                 <div className="text-center">
-                    <a href="#" className="text-indigo-600 hover:text-indigo-500">Forgot password?</a>
+                    <Link href="#" className="text-indigo-600 hover:text-indigo-500">Forgot password?</Link>
                 </div>
             </div>
         </main>
